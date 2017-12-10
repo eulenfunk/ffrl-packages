@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=tunneldigger
-PKG_VERSION:=0.4.8
+PKG_VERSION:=0.4.7
 PKG_RELEASE:=1
 PKG_REV:=404a3c9c0b5b0f0ab8ce4ae52aca09edf2ebcd77
 
