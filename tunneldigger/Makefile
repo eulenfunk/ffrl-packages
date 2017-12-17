@@ -1,12 +1,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=tunneldigger
-PKG_VERSION:=0.4.7
+PKG_VERSION:=0.4.9
 PKG_RELEASE:=1
-PKG_REV:=404a3c9c0b5b0f0ab8ce4ae52aca09edf2ebcd77
+PKG_REV:=fd696109ed4ea2874df723114a2ddc55c46f165a
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
-PKG_SOURCE_URL:=git://github.com/wlanslovenija/tunneldigger.git
+PKG_SOURCE_URL:=git://github.com/eulenfunk/tunneldigger.git
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE_VERSION:=$(PKG_REV)
@@ -16,7 +16,7 @@ include $(INCLUDE_DIR)/package.mk
 define Package/tunneldigger
   SECTION:=net
   CATEGORY:=Network
-  DEPENDS:=+libnl-tiny +kmod-l2tp +kmod-l2tp-ip +kmod-l2tp-eth +librt +libpthread
+  DEPENDS:=+libnl-tiny +kmod-l2tp +kmod-l2tp-ip +kmod-l2tp-eth +librt +libpthread +libresolv
   TITLE:=L2TPv3 tunnel broker client
 endef
 
